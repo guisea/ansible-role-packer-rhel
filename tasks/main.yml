@@ -73,8 +73,8 @@
   failed_when: false
   register: vmware_check
 
-- include_tasks: vmware.yml
-  when: vmware_check.rc == 0
+#- include_tasks: vmware.yml
+#  when: vmware_check.rc == 0
 
 # Cleanup tasks.
 - name: Remove unneeded packages.
